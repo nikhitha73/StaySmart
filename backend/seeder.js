@@ -5,7 +5,8 @@ import dotenv from 'dotenv';
 import User from './models/User.js';
 import Hotel from './models/Hotel.js';
 import Booking from './models/Booking.js';
-
+import dns from 'dns';
+dns.setServers(['8.8.8.8', '8.8.4.4']);
 dotenv.config();
 
 const __dirname = path.resolve();
